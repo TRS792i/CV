@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @font-face{
     font-family: "Raleway";
-    src: url(../fonts/Raleway-Regular.ttf) ;
-   
+    src: url(../fonts/Raleway-Regular.ttf) ;  
+}
+@font-face{
+    font-family: "Raleway-italic";
+    src: url(../fonts/Raleway-Italic.ttf);
+}
+@font-face{
+    font-family: "Raleway-bold";
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+@font-face{
+    font-family: "Raleway-thin";
+    src: url(../fonts/Raleway-Thin.ttf);
 }
 body{
     background-color: #f5f5f5;
@@ -25,12 +36,20 @@ body{
     height: 150px;
     border: 5px solid #fff;
     border-radius: 50%;
+    margin-left: -100px;
+}
+#photo:hover{
+    cursor: zoom-in;
+}
+#photo:active{
+    
 }
 .container-2{
     color: #fff;
     text-align: center;
     line-height: 20px;
     padding-top: 20px;
+    margin-left: -100px;
 }
 h1{
     font-family: lato;
@@ -44,7 +63,6 @@ h2{
     display: flex;
     justify-content: center;
     font-family: Raleway;
-    font-weight: bold 100;
 }
 .contact ul{
     list-style-type: none;
@@ -60,10 +78,19 @@ svg{
     padding-right: 20px;
 }
 .mail{
-    margin-left: -50px ;
+    text-decoration: none;
+    color: #fff;
+
 }
-.permis{
-    margin-left: 5px;
+.tel{
+    text-decoration: none;
+    color: #fff;
+    margin-left: -45px;
+}
+.adresse{
+    text-decoration: none;
+    color: #fff;
+    margin-left: -15px;
 }
 section{
     display: grid;
@@ -86,38 +113,57 @@ section h2{
 .title{
     display: block;
     border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+    padding-bottom: -20px;
     margin-bottom: 30px;
     font-size: 1.2em;
 }
 .skills{
+    line-height: 15px;
+    padding-top: 0px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Raleway;
+    font-size: 1em;
+    font-weight: 900;
+}
+.star{
+    color: #17abb3;
+    font-size: 20px;
+}
+#language{
+    display: flex;
+    justify-content: space-between;
+}
+#listlanguage-1{
     list-style-type: none;
     line-height: 15px;
     padding-top: 0px;
     margin-bottom: 30px;
 }
-.skills li{
-   position: relative;
+#listlanguage-1 li{
    font-family: Raleway ;
-   font-weight: bold 900;
    font-size: 1.2em;
-   margin-left: -40px;
    margin-bottom: 20px;
+   margin-left: -40px;
 }
-.langues{
+#listlanguage-2{
     list-style-type: none;
     line-height: 15px;
     padding-top: 0px;
     margin-bottom: 30px;
 }
-.langues li{
-    position: relative;
+#listlanguage-2 li{
    font-family: Raleway ;
-   font-weight: bold 900;
    font-size: 1.2em;
-   margin-left: -40px;
    margin-bottom: 20px;
+}
+#notion{
+    padding-left: 100px;
 }
 .qualities{
+    color: #17abb3;
     list-style-type: square ;
     line-height: 15px;
     padding-top: 0px;
@@ -126,11 +172,16 @@ section h2{
 .qualities li{
     position: relative;
     font-family: Raleway;
-    font-weight: bold 900;
     margin-left: -25px;
     margin-bottom: 20px;
 }
+.textqualities{
+    color: black;
+    font-family: Raleway;
+    font-size: 1.2em;
+}
 .hobbies{
+    color: #17abb3;
     list-style-type: square;
     line-height: 15px;
     padding-top: 0px;
@@ -141,4 +192,73 @@ section h2{
     font-family: Raleway;
     margin-left: -40px;
     margin-bottom: 20px;
+}
+.texthobbies{
+    color: black;
+    font-family: Raleway;
+    font-size: 1.2em;
+}
+#textprofil{
+    font-family: Raleway;
+    font-size: 1.2em;
+    text-indent: 25px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.formation{
+    line-height: 5px;
+}
+.content{
+    height: 60px;
+    margin-bottom: 20px;
+    padding-top: 1px;
+    padding-left: 10px;
+    
+}
+.content:hover{
+    background-color: #e3e3e3;
+    border-left: 6px solid #17abb3;
+}
+.titlecontent{
+    font-family: Lato;
+    font-size: 1.2em;
+}
+.annee{
+    float: right;
+    color: #17abb3;
+    font-family: Raleway;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+.textitalic{
+    font-family: Raleway-italic;
+    font-size: 1em;
+}
+.stage{
+    line-height: 5px;
+}
+.experience{
+    line-height: 5px;
+}
+.footer{
+    background-color: #17abb3;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.social{
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.socialicon{
+    width: 30px;
+    height: 30px;
+}
+.copyright{
+    font-family: Raleway-italic;
+    color: #f5f5f5;
+    font-size: 1.2em;
+    text-align: center;
 }
