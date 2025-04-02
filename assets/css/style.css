@@ -41,9 +41,6 @@ body{
 #photo:hover{
     cursor: zoom-in;
 }
-#photo:active{
-    
-}
 .container-2{
     color: #fff;
     text-align: center;
